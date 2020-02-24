@@ -50,7 +50,7 @@ def copy_images(root_path):
 #     print(title)
 #     print(version_number)
 #     print(build_date)
-#     print(header)
+    print(header)
 
 
 if __name__ == '__main__':
