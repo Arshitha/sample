@@ -32,25 +32,25 @@ def copy_images(root_path):
             print(each)
             run_shell_cmd("cp -R "+each+"/images"+" "+root_path+"/images")
 
-def extract_header_string():
-    """Extract the latest release's version number and date from CHANGES.md."""
-    # released_versions = []
-    # title = ""
-    # run_shell_cmd("cp ../mkdocs.yml src_copy/mkdocs.yml")
+# def extract_header_string():
+#     """Extract the latest release's version number and date from CHANGES.md."""
+#     # released_versions = []
+#     # title = ""
+#     # run_shell_cmd("cp ../mkdocs.yml src_copy/mkdocs.yml")
 
-    with open('src_copy/src/mkdocs.yml', 'r') as file:
-        data = file.readlines()
+#     with open('src_copy/src/mkdocs.yml', 'r') as file:
+#         data = file.readlines()
 
-    print(data[0])
-    header_string = data[0].split(": ")[1]
-    title = " ".join(header_string.split()[0:4])
-    version_number = header_string.split()[-1]
-    build_date = datetime.today().strftime('%Y-%m-%d')
-    header = " ".join([title, version_number, build_date])
-    print(title)
-    print(version_number)
-    print(build_date)
-    print(header)
+#     print(data[0])
+#     header_string = data[0].split(": ")[1]
+#     title = " ".join(header_string.split()[0:4])
+#     version_number = header_string.split()[-1]
+#     build_date = datetime.today().strftime('%Y-%m-%d')
+#     header = " ".join([title, version_number, build_date])
+#     print(title)
+#     print(version_number)
+#     print(build_date)
+#     print(header)
 
 
 if __name__ == '__main__':
