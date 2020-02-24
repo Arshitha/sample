@@ -45,11 +45,11 @@ def copy_images(root_path):
 #     header_string = data[0].split(": ")[1]
 #     title = " ".join(header_string.split()[0:4])
 #     version_number = header_string.split()[-1]
-#     build_date = datetime.today().strftime('%Y-%m-%d')
-#     header = " ".join([title, version_number, build_date])
-#     print(title)
-#     print(version_number)
-#     print(build_date)
+    build_date = datetime.today().strftime('%Y-%m-%d')
+    header = " ".join([title, version_number, build_date])
+    print(title)
+    print(version_number)
+    print(build_date)
     print(header)
 
 
